@@ -29,10 +29,7 @@
 		compatible = "qcom,mdss-dsi-ctrl";
 		label = "MDSS DSI CTRL->0";
 		cell-index = <0>;
-		reg = 	<0xfd922800 0x1f8>,
-			<0xfd922b00 0x2b0>,
-			<0xfd828000 0x108>;
-		reg-names = "dsi_ctrl", "dsi_phy", "mmss_misc_phys";
+		reg = <0xfd922800 0x600>;
 		qcom,mdss-fb-map = <&mdss_fb0>;
 		qcom,mdss-mdp = <&mdss_mdp>;
 		l8_dsi-supply = <&pm8226_l8>;
@@ -307,7 +304,7 @@
            1 &intc 0 221 0
            2 &msmgpio 37 0x3>;
    interrupt-names = "hc_irq", "pwr_irq", "status_irq";
-   cd-gpios = <&msmgpio 37 0x0>; /* card detect 1:Low-Active, 0:High-Active  */
+   cd-gpios = <&msmgpio 37 0x1>; /* card detect 1:Low-Active, 0:High-Active  */
 
    status = "ok";
 };
