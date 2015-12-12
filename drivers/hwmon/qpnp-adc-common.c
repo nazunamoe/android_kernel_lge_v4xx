@@ -1212,7 +1212,7 @@ int32_t qpnp_vadc_check_result(int32_t *data)
 }
 EXPORT_SYMBOL(qpnp_vadc_check_result);
 
-#if defined (CONFIG_MACH_MSM8226_E7WIFI) || defined (CONFIG_MACH_MSM8926_E7LTE_ATT_US)
+#if defined (CONFIG_MACH_MSM8226_E7WIFI) || defined (CONFIG_MACH_MSM8926_E7LTE_ATT_US) || defined (CONFIG_MACH_MSM8926_E8LTE_KR) || defined (CONFIG_MACH_MSM8926_E8LTE)
 int qpnp_adc_get_revid_version(struct device *dev)
 {
 	struct pmic_revid_data *revid_data;
