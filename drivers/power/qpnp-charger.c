@@ -721,6 +721,7 @@ lge_pm_batt_temp_cancel_work(struct work_struct *work)
 }
 #endif
 #ifdef CONFIG_LGE_PM
+static struct qpnp_chg_chip *qpnp_chg;
 int32_t qpnp_charger_is_ready(void)
 {
 	struct qpnp_chg_chip *chg = qpnp_chg;
